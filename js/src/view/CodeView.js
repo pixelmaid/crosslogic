@@ -17,6 +17,8 @@ function($,CodeMirror, jshint, ViewBase){
 
 			super(params);
 
+			var script = (params.hasOwnProperty("script")) ? params.script : "foobar";
+
 			this.codeMirror = CodeMirror(this.el[0], {
 				mode: "javascript",
 				lineNumbers: true,
@@ -28,9 +30,13 @@ function($,CodeMirror, jshint, ViewBase){
 				lint: true
 			});
 
+
 			this.codeMirror.on("change", function() {
 				this.onCodeChange();
 			}.bind(this));
+
+			this.codeMirror.setValue(script);
+
 		}
 
 		

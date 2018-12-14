@@ -1,7 +1,7 @@
 "use strict";
-define(["jquery","model/CanvasModel","model/CodeModel","view/CanvasView","view/CodeView"], 
+define(["jquery","model/CanvasModel","model/CodeModel","view/CanvasView","view/CodeView","text!../exampleScripts/mouseEvents.js", "text!../exampleScripts/simplePath.js"], 
 
-	function($,CanvasModel,CodeModel,CanvasView,CodeView) {
+	function($,CanvasModel,CodeModel,CanvasView,CodeView, mouseEvents,simplePath) {
 
 		class Main {
 			constructor() {
@@ -21,7 +21,8 @@ define(["jquery","model/CanvasModel","model/CodeModel","view/CanvasView","view/C
 				});
 				var geometryCodeView = new CodeView({
 					el:$("#geometryEditor"),
-					model: geometryCodeModel
+					model: geometryCodeModel,
+					script:simplePath
 				});
 
 				var eventCodeModel = new CodeModel({
@@ -29,7 +30,8 @@ define(["jquery","model/CanvasModel","model/CodeModel","view/CanvasView","view/C
 				});
 				var eventCodeView = new CodeView({
 					el:$("#eventEditor"),
-					model: eventCodeModel
+					model: eventCodeModel,
+					script:mouseEvents
 				});
 
 				var logicCodeModel = new CodeModel({
