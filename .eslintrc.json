@@ -1,0 +1,45 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "amd": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+
+    "rules": {
+        "requirejs/no-invalid-define": 2,
+        "requirejs/no-multiple-define": 2,
+        "requirejs/no-named-define": 2,
+        "requirejs/no-commonjs-wrapper": 2,
+        "requirejs/no-object-define": 1,
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": ["error", {
+            "allow": ["warn", "error"]
+        }]
+    },
+    
+    "plugins": [
+        "requirejs",
+        "json"
+
+    ]
+}

@@ -1,0 +1,83 @@
+/*style.css*/
+
+
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 436px; /* height of menu (40px) + toolbar (n*36px) */
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  overflow: hidden;
+  background-color: #aaa;
+}
+
+h2 {
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+}
+
+
+.canvas-wrapper {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+.editorWrapper{
+  margin: auto;
+  margin-top: 50;
+  width:1600px;
+}
+
+.contentContainer{
+  border: solid 1px #8a8a8a;
+  width: 800px;
+  height: 900px;
+  float:left;
+    
+}
+
+#canvas{
+  width: 100%;
+  height: 100%;
+  background-color: #e7e7e7;
+}
+
+
+.codeEditor {
+    height: 280px;
+    margin-bottom:10px;
+    width: 100%;
+}
+
+
+.CodeMirror {
+    height: 100%
+  }
