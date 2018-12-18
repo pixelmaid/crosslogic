@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.76" height="22.4" viewBox="0 0 28.76 22.4">
+  <title>brush</title>
+  <g>
+    <path d="M27,21.69l.37-.46.32-.39.37-.46s-4-6.45-6.34-8.09-8.59-5-8.59-5l-.37.46L11.41,9.36,11,9.82s4.61,5.4,6.7,7.35S27,21.69,27,21.69Z" style="fill: none;stroke: #76787b;stroke-miterlimit: 10;stroke-width: 1.197203927190614px"/>
+    <path d="M11.6,6.43S10.6,2.26,7,1c-2.89-1-5.42-2-7,.63,0,0,3.13-.16,3.26,1.75s.47,2.43,2.41,4A6.78,6.78,0,0,0,9.84,8.6Z" style="fill: #76787b"/>
+    <line x1="18.19" y1="10.13" x2="14.89" y2="14.2" style="fill: none;stroke: #76787b;stroke-miterlimit: 10;stroke-width: 1.197203927190614px"/>
+  </g>
+</svg>

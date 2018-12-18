@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.86" height="21.99" viewBox="0 0 21.86 21.99">
+  <title>pen</title>
+  <g>
+    <polygon points="1.41 1.41 5.41 16.41 13.41 17.41 15.41 15.41 17.41 13.41 16.41 5.41 1.41 1.41" style="fill: none;stroke: #76787b;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <line x1="1.41" y1="1.41" x2="10.91" y2="10.91" style="fill: none;stroke: #76787b;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle cx="10.91" cy="10.91" r="2.2" style="fill: #76787b"/>
+    <rect x="10.03" y="15.11" width="12.7" height="2.8" transform="translate(-6.88 16.42) rotate(-45)" style="fill: #76787b"/>
+  </g>
+</svg>

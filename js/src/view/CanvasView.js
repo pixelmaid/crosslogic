@@ -15,6 +15,7 @@ function($,paper,ViewBase){
 
 			$(document).bind("keydown", this.canvasKeydown);
 			$(document).bind("keyup", this.canvasKeyup);
+
 		}
 
 

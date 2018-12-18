@@ -46,7 +46,6 @@ function onMouseUp(event) {
 }
 
 function replicate(path){
-
     var segments = path.segments.map(
             function(segment,i,array){
                 if(i>0 && i<array.length-1){

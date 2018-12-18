@@ -1,0 +1,6 @@
+var {{id}} = new Path({
+    segments: [{{#each segments}}{{#if @last}}[{{this}}]{{else}}[{{this}}],{{/if}}{{/each}}],
+    strokeColor: {{strokeColor}},
+    fillColor: {{fillColor}},
+    closed: {{closed}}
+});

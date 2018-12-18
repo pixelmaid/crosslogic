@@ -13,10 +13,21 @@ module.exports = function (grunt) {
 			]
 		},
 
+		mocha: {
+			all: {
+				src: ["tests/testrunner.html"],
+			},
+			options: {
+				run: true,
+				growlOnSuccess: false
+			}
+		},
+
 		clean: ["./build"],
 		copy: {
 			html: { src: "index-build.html", dest: "build/index.html" },
 			images: { expand: true, cwd: "images", src: "**", dest: "build/images/" },
+			font: { expand: true, cwd: "font", src: ["**/*.ttf","**/*.eot","**/*.svg","**/*.woff","**/*.woff2"], flatten: true, dest: "build/style/font" }
 			/*ui:{
                 files: [{ 
                     expand: true, 
@@ -44,6 +55,13 @@ module.exports = function (grunt) {
 					cwd: "bower_components/codemirror/addon/lint",
 					src: ["*.css"],
 					dest: "build/style/codemirror/addon/"
+				},
+				{
+					expand: true,
+					flatten: true,
+					cwd: "font",
+					src: ["**/*.css"],
+					dest: "build/style/font"
 				}]
 			}
 		},
@@ -67,13 +85,13 @@ module.exports = function (grunt) {
 	});
 
 	grunt.loadNpmTasks("grunt-eslint");
-
+	grunt.loadNpmTasks("grunt-mocha");
 	grunt.loadNpmTasks("grunt-contrib-clean");
 	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
 	grunt.loadNpmTasks("grunt-contrib-requirejs");
 
-	grunt.registerTask("test", ["eslint"]);
+	grunt.registerTask("test", ["eslint", "mocha"]);
 
 	grunt.registerTask("build", [
 		"test", "clean", "copy", "cssmin", "requirejs"

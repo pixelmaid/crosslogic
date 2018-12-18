@@ -6,10 +6,12 @@ define([],
 	
 		class Script{
 			
-			constructor(){
-				this.name = "Sketch";
-				this.code = "";
-				this.breakpoints = [];
+			constructor(params){
+				this.sourceName = params.sourceName;
+				this.sourceId = params.sourceId;
+				this.sourceCode = params.sourceCode;
+				this.breakpoints = params.breakpoints;
+				this.rank = params.rank;
 			}
 		}	
 	

@@ -24,7 +24,12 @@
     "jquery-ui": "1.12.1",
     "text": "2.0.15",
     "requirejs": "2.3.6",
-    "codemirror": "5.42.0" ,
-    "lodash": "4.17.1"
+    "codemirror": "5.42.0",
+    "lodash": "4.17.1",
+    "shortid": "0.1.1",
+    "handlebars": "^4.0.12",
+    "hbs": "^1.0.0",
+    "eventEmitter": "^5.2.5",
+    "mootools": "^1.6.0"
   }
 }
